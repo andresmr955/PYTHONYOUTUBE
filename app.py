@@ -286,3 +286,30 @@ while i <= 5:
     i += 1
     
 print("Well Done")
+## For LOOPS
+
+#String: is a secuence of character
+
+for item in 'python':
+    print(item)
+# List is a list of items, objects, customer, emails
+for item in ['Mosh', 'John', 'Sara']:
+    print(item)
+for item in [1,2,3,4,5,6]:
+    print(item)
+##RANGE FUNCTION
+
+for item in range(10):
+    print(item)
+
+# range can start with a number and it can end with other but it doesn't show it
+for item in range(5,10):
+    print(item)
+# the third value works to go steps forward
+for item in range(5,10, 2):
+    print(item)
+##NESTED LOOPS
+#CORDINATES IS A X AND Y 
+for x in range(4):
+    for y in range(3):
+        print(f'{x}, {y}')
