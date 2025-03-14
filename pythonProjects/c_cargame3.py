@@ -4,17 +4,24 @@ user_option = ""
 while True:
     user_option = input("").lower()
     if user_option == "start":
-        if user_option == "start" and car_on == True:
+        if car_on:
             print("Car is already started")
-        elif user_option == "start":
+        else:
             car_on = True
             print("Car started. Ready to go!")
     elif user_option == "stop":
-        if user_option == "stop" and car_on == False:
+        if not car_on:
             print("Car is already stopped")
-        elif user_option == "stop":
+        else:
             car_on = False
-            print("Car stopped!")
+            print("Car is stopped")
+
+       # if car_on:
+       #    car_on = False 
+       #    print('Car is stopped')
+       # else: 
+       #    print("Car is already stopped")
+       #         
     elif user_option == "help":
         print('''
 start - to start the car
