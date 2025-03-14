@@ -8,10 +8,10 @@ print(f'Your weight in Kilos is {weightCustomerKilos}')
 pounds_in_kilos = 0.4536
 customerWeightNumbers = float(input("What is your weight in numbers?"))
 customerWeightMeasure = input("Plase chose the measure of your weight, (L)lbs or (K)Kilos: ")
-if type(customerWeightNumbers) == float and customerWeightMeasure == "L":
+if type(customerWeightNumbers) == float and customerWeightMeasure.upper() == "L":
     customerWeightKilosX = customerWeightNumbers * pounds_in_kilos
     print(f'Your weight in Kilos is {customerWeightKilosX}')
-elif type(customerWeightNumbers) == float and customerWeightMeasure == "K":
+elif type(customerWeightNumbers) == float and customerWeightMeasure.upper() == "K":
     customerWeightPounds = customerWeightNumbers / pounds_in_kilos
     print(f'Your weight in pounds is {customerWeightPounds}')
 else:
