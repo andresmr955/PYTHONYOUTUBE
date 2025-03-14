@@ -1,0 +1,26 @@
+##Guessing Game
+
+#What exactly is the problem statement?
+#-The user will have to guess the number in my game
+#What are the inputs?
+#- the input will be any number that the user chooses
+#What are the outputs?
+#- the output will be if the user guessed the number correctly that is 9
+#Are there constraints or edge cases to consider?
+#- the only can guess the number once, but he has 3 opportunities to guess the number
+# What is the expected time complexity or performance requirements?
+#- I think less than one minute
+#Are there specific rules or conditions I must follow?
+#- not
+
+
+##2️⃣ Breaking Down the Problem
+##Can I simplify or break the problem into smaller parts?
+##-
+##Have I seen a similar problem before?
+##-
+##Can I solve a simpler version of the problem first?
+##-
+##What data structures (arrays, lists, trees, etc.) would be useful?
+
+##What algorithms (sorting, searching, dynamic programming, etc.) might help?
