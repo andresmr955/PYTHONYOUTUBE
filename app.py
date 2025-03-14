@@ -214,3 +214,28 @@ if creditBuyer == True:
 else:
     downPayment = housePrice  * 0.20
 print(f'The down payment for this buyer is ${downPayment}')
+
+##if applicant has high income and good credit 
+## Eligable for loan
+
+##OR LOGICAL OPERATOR
+has_high_income = True
+has_good_credit = True 
+has_criminal_record = False
+if has_high_income and has_good_credit:
+    print("Eligable for loan")
+else:
+    print("Not eligable for loan")
+
+##OR LOGICAL OPERATOR
+
+if has_good_credit or has_high_income:
+    print("Eligable for loan, because at least one of the condition is true")
+
+##NOT OPERATOR
+# if the applicant has good credit and not has criminal record
+
+if has_good_credit and not has_criminal_record:
+    print("Elegible for loan, cause it isn't a criminal")
+else:
+    print("Not elegible for loan, because it is a criminal")
