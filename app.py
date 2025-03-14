@@ -163,5 +163,54 @@ print(x)
 
 x = 10 + 3 * 2 ** 2
 print(x)
+
+#MATH FUNCTIONS
+
+x = 2.9 
+print(round(x))
+# this functions always return a positive number and this function 
+# always rounds up to the nearest number
+
+print(abs(-2.9))
+# this function always returns a positive number
+# abs function return the absolute value of the number
+
+# if you want to program that involves complex mathemathics calculationn 
+#you need to import the MATH MODULE, a module in python is a separate file with some reusable code
+# to import a module you use the import keyword
+# to use a function from a module you use the dot notation
+# import math.
+
+import math 
+print(math.ceil(2.9))
 #minute 59:44
 
+##CONDTIONAL STATEMENTS
+
+is_hot = False
+is_cold = True
+if is_hot:
+    print("It is a hot day")
+    print("Drink plenty of water")
+elif is_cold: 
+    print("It it's a cold day")
+    print("wear warm clothes")
+else:
+    print("It's a lovely day")
+print("Enjoy your day")
+
+##Exercise 
+## datos de entrada = house 1Million 
+## credit good or not good
+## house - 10%
+## if not house - 20 % 
+## Datos de salida = down payment
+
+housePrice = 1000000
+downPayment = 0
+creditBuyer = bool(input(f'The credit for this buyer is good? '))
+if creditBuyer == True:
+    downPayment = housePrice * 0.10
+else:
+    downPayment = housePrice  * 0.20
+print(f'The down payment for this buyer is ${downPayment}')
