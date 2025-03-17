@@ -466,3 +466,18 @@ print(greet_user())
 
 ## There is an order in python how it calls every element of the document
 ## you have to create the function first before to call it 
+
+##PARAMETERS
+## Yes, exactly! Parameters in a function are like placeholders or characteristics that the function expects when it's called. They allow you to pass data into the function to be used within its body.
+## We are obligated to pass the parameter of the function
+
+print("Start")
+def greeting(name, last_name):
+    print(f'Hello {name} {last_name}')
+    print("Bye")
+
+user_name = input("What is your name: ?")
+user_last_name = input("What is your last_name: ?")
+
+greeting(user_name, user_last_name)
+print("Ends")
