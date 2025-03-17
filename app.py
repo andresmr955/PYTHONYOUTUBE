@@ -451,3 +451,18 @@ output = ""
 for word in words:
     output += emojis_dictionary.get(word, word) + " "
 print(output)
+##FUNCTIONS 
+
+#Yes! Functions in Python are blocks of reusable code that you can call whenever needed. They help organize code, avoid repetition, and make programs easier to read and maintain.
+
+def greet_user(): 
+    print('''
+    Hello there
+    Welcome aboard
+    ''')
+
+
+print(greet_user())
+
+## There is an order in python how it calls every element of the document
+## you have to create the function first before to call it 
