@@ -654,3 +654,23 @@ class Point:
 point = Point(10,20)
 point.x = 86
 print(point.x)
+
+## Define a new type called person
+## name an attribute 
+## talk() as a method
+
+class Person():
+    def __init__(self, name):
+        self.name = name
+
+
+    def talk(self):
+        xreturn = "He talks"
+        return xreturn
+person_one = Person("Andres")
+print(person_one.talk())
+print(person_one.__dict__)
+
+bob = Person("bob")
+print(bob.talk())
+print(bob.__dict__)
