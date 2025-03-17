@@ -502,3 +502,15 @@ print("Ends")
 ##C✅ If you use positional arguments, use them for all parameters (if it's simple).
 ##C✅ If you use keyword arguments, use them for all parameters (for clarity).
 ##C✅ If you mix them, positional must come first!
+
+##RETURN STATEMENT
+## This is so functional if you are doing calculation and you want to return an item
+
+def square(number):
+    return number * number
+
+#result = square(3)
+print(square(3))
+
+## by default all functions return none
+
