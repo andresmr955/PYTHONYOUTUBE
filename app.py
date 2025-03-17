@@ -514,3 +514,20 @@ print(square(3))
 
 ## by default all functions return none
 
+### CREATE A REUSABLE FUNCTION
+input_user = input("Write anything: ")
+
+def emojiConverter(customer_phrase):
+    words = customer_phrase.split(' ')
+    dictionary_emoji = {
+        ":)" : "😃",
+        ":(" : "😔",
+        ":p" : "😋"
+    }
+
+    output_customer = ""
+    for item in words:
+        output_customer += dictionary_emoji.get(item, item) + " "
+    return output_customer
+
+print(emojiConverter(input_user))
