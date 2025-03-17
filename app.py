@@ -636,3 +636,21 @@ print(carToyota.honk(), " with a module")
 
 carToyota.honk = honk.__get__(carToyota)
 print(carToyota.honk(), " without a module")
+
+## CONSTRUCTORS
+## A constructor is a special method named __init__() that gets called with underscore
+# at the time of creating an object
+
+class Point: 
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y 
+
+    def move(self):
+        print("move")
+    def draw(self):
+        print("draw")
+
+point = Point(10,20)
+point.x = 86
+print(point.x)
