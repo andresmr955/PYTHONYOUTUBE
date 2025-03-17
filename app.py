@@ -313,3 +313,11 @@ for item in range(5,10, 2):
 for x in range(4):
     for y in range(3):
         print(f'{x}, {y}')
+##LISTS
+#A list a is type of data that we can store differents elements like numbers, booleans, and string 
+names = ['John', 'bob', 'Mosh ', 'Sarah', 'Mary']
+print(names[2])
+print(names[-2])
+print(names[2:]) #Rerturn all the items after 2 item
+print(names[2:4])
+print(names[2:4])

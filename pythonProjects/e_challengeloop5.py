@@ -6,10 +6,7 @@ numbers = [5,2,5,2,2]
 
 ## THAT ONE DOES NOT WORK CAUSE WE NEED A NEESTED LOOP
 
-
-
 character = "x"
-
 for item in numbers:
     cajita = ""
     for y in range(item):    
