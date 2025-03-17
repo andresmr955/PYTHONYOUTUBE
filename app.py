@@ -623,10 +623,16 @@ print(carToyota.stopping())
 carToyota.color = "Red"
 print(carToyota.__dict__)
 
-## Adding a function after been created
+## Adding a function after been created with a module 
 
 def honk(self):
     return f"{self.brand} is honking!"
 
 carToyota.honk = types.MethodType(honk, carToyota)
-print(carToyota.honk())
+print(carToyota.honk(), " with a module")
+
+
+## Adding a function after been created without a module DIRECTLY
+
+carToyota.honk = honk.__get__(carToyota)
+print(carToyota.honk(), " without a module")
