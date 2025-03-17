@@ -558,3 +558,75 @@ except ValueError:
 ## you have to avoid what the code does, of course and is obvious, can create noise
 ## just to explain why and house?
 ## too much of good thing is bad thing
+
+
+##CLASSES
+## We use to defined new types
+## These classes can have methods that we define in the body of the class
+## The classes can have attributes that we can set anywhere in out programs
+## Numbers 
+##Strings
+##Booleans 
+##----------------
+##Lists 
+##Dictionaries
+
+##we capitalized the first letter of each word in classes
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+## An object is an instance of a class
+
+point1 = Point()
+point1.x = 10
+point1.y = 20
+print(point1.__dict__)
+print(dir(point1))
+
+point1.draw()
+
+
+
+point2 = Point()
+point2.x = 1
+print(point2.x)
+
+import types
+## CLASSES CREATED BY ME
+
+class Car:
+    def __init__(self, brand, speed):
+        self.brand = brand
+        self.speed = speed
+
+
+    def running(self):
+        carruns = "Car runs"
+        return carruns
+    
+    
+    def stopping(self):
+        carstops = "Car stops"
+        return carstops
+carToyota = Car("Toyota", 180)
+##to check the arguments
+print(carToyota.__dict__)
+print(carToyota.running())
+print(carToyota.stopping())
+
+## Adding an parameter after been created
+
+carToyota.color = "Red"
+print(carToyota.__dict__)
+
+## Adding a function after been created
+
+def honk(self):
+    return f"{self.brand} is honking!"
+
+carToyota.honk = types.MethodType(honk, carToyota)
+print(carToyota.honk())
