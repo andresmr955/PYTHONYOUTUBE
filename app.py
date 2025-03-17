@@ -525,9 +525,32 @@ def emojiConverter(customer_phrase):
         ":p" : "😋"
     }
 
+
     output_customer = ""
     for item in words:
         output_customer += dictionary_emoji.get(item, item) + " "
     return output_customer
 
 print(emojiConverter(input_user))
+
+##Exceptions 
+## How to handle errors
+## as a good python programmer you should anticipate any kind of error that the user can cause and handle properly
+## you have to show to the customer how he can proceed after cause because he did not properly read
+
+##example crash
+#age = int(input('Age: '))
+#print(age)
+
+## good example not crash
+
+try: 
+    age = int(input('Age: '))
+    income = 20000
+    risk = income / age ## this can not be handle with the exception Value error because is a divion by 0
+    print(age)
+except ZeroDivisionError: 
+    print("Age can not be zero")
+except ValueError:
+    print('Invalid Value')
+
