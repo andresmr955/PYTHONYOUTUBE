@@ -434,3 +434,20 @@ print(customer)
 ##modifie a key-value
 customer["name"] = "Jack Smith"
 print(customer)
+
+
+##EMOJI CONVERTER
+
+message = input("Write user: ")
+words = message.split(' ') ##This method help us to divide the string every time that finds a space 
+print(words)
+
+
+emojis_dictionary = {
+    ":)" : "😀",
+    ":(" : "😔"
+}
+output = ""
+for word in words:
+    output += emojis_dictionary.get(word, word) + " "
+print(output)
