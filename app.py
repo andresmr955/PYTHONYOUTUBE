@@ -554,3 +554,7 @@ except ZeroDivisionError:
 except ValueError:
     print('Invalid Value')
 
+##COMENTS 
+## you have to avoid what the code does, of course and is obvious, can create noise
+## just to explain why and house?
+## too much of good thing is bad thing
