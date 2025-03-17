@@ -321,3 +321,116 @@ print(names[-2])
 print(names[2:]) #Rerturn all the items after 2 item
 print(names[2:4])
 print(names[2:4])
+
+###2Dimension LISTS
+##data science and maching learning
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+print(matrix[0][1])
+#using square brackets we can access individial items
+matrix[0][1] = 20
+print(matrix[0][1])
+print(matrix)
+
+##USING LOOP
+
+matrixa = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+for row in matrixa:
+    for item in row:
+        print("This is the matrix in a loop", item )
+
+##LIST METHODS
+numbers = [5, 2, 1, 7, 4]
+numbers.append(20)
+print(numbers)
+numbers.insert(0,10) ## with this method is necessary to add the index and the object or element where you want to insert it.
+print(numbers)
+numbers.remove(5)  ## it removes the item you want to delete
+numbersstring = ["David","Andres",5, 2, 1, 7, 4]
+print(numbersstring)
+numbersstring.remove("David")  ## it removes the item you want to delete
+print(numbersstring)
+#numbers.clear() ## It deletes all items
+print("This is the list ", numbers)
+indexValue = numbers.index(7)
+print(indexValue) ## it returns the index of the value that you put inside the brackets
+
+print(5 in numbersstring)
+print(50 in numbers)
+numbersx = [5, 2, 1, 7, 4, 5]
+print(numbersx.count(5)) ## it counts how many times is an item in a list
+numbersx.sort()
+print("sort method",numbersx ) ##This method puts the items in order or in a group
+##NONE is an object in python that represents the absence of a value
+numbersx.reverse()
+print("Reverse method", numbersx) ##This method reverses the items of our list
+numbersx.copy() ## This method has to be declared in a new variable and it is going to copy all element in it, but you can midify the new variable and it is not going affect the original
+
+##WRITE A PROGRAM TO REMOVE THE DUPLCAITES IN A LIST 
+
+
+lista = [2, 2, 4, 6, 3, 4, 6, 1]
+duplicados_eliminados = []
+
+
+for item in lista:
+    cuantasVeces = lista.count(item) 
+    if cuantasVeces > 1:
+        duplicados_eliminados.append(item)
+        lista.remove(item)
+print(lista)
+print(duplicados_eliminados)
+
+##TUPLES 
+## The tuples are similar but to list to store values, there are key difference between list and tuples
+## The tuples are immutabily and we use paretheses and are faster than the lists
+
+numbers = (1,2,3)
+print(numbers[0])
+
+##UNPACKING
+##Unpacking in Python allows you to assign elements of a list or tuple to multiple variables in a single line.
+coordinates = (1, 2, 3)
+coordinates[0] * coordinates[1] *  coordinates[2] 
+
+x = coordinates[0]
+y = coordinates[1]
+z = coordinates[2]
+
+x * y * z
+
+x,y,z = coordinatesa
+
+##Dictionaries 
+## It is data structure that stores information as key-value pairs. with curly braces
+## the keys should be unique
+
+customer = {
+    "name": "Andres Smith",
+    "age": 26,
+    "is_verified": True
+}
+
+print(customer["name"])
+
+
+##METHOD
+print("This is the brthday",customer.get("birthday"))
+print("This is the name", customer.get("name"))
+
+## if you want to see a  key-value, but it does not add it to the dictionary
+print(customer.get("birthday", "17/03/25"))
+print(customer)
+
+##modifie a key-value
+customer["name"] = "Jack Smith"
+print(customer)
