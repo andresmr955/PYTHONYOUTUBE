@@ -753,3 +753,24 @@ print(j.__dict__)
 ## Method -  a function within a class
 ## Object - A particualr instance of a class
 ## Inheritance - The ability to extend a class to make a new class
+
+
+##Modules
+## It is a file with some python code
+# We use modules organize our code, just like section in supermarket
+# we have ability to reuse our code
+##Instead of writing all the code, instead of writing all the functions in one file, you break up 
+# our code across multiple file. Each file is called Module
+# It should contain all the related functions and classes
+
+##IMPORT THE ENTIRE MODULE
+import converters
+##print it out
+print("This is from kg to lbs=> ", converters.kg_to_lbs(70))
+
+## The second option, to use the specifics functions from that module
+from converters import lbs_to_kg
+
+lbs_to_kg(100)
+##print it out
+print("This is from lbs to kg=> ", lbs_to_kg(100))
