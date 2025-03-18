@@ -7,6 +7,8 @@
 
 import i_utils9
 
-numbers = [10,3,6,890,80,160]
+numbers = [10,3,6,890,900,160]
 
 print(i_utils9.find_max(numbers))
+
+print(max(numbers))
