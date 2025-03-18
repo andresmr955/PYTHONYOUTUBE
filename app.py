@@ -800,3 +800,72 @@ members = ['John', 'Mary', 'bob', 'Mosh']
 leader = random.choice(members)
 
 print(leader)
+
+##FILES AND DIRECTORIES
+## https://docs.python.org/3/py-modindex.html
+## pathlib: Classes that we can use to create objects to work with directories 
+import shutil
+from pathlib import Path 
+
+
+##Creating dir
+#path = Path("ecommerceexample")
+
+##checking if exists the path
+#print(path.exists())
+##Creating directory
+#print(path.mkdir())
+##Deleting dir
+###if path.exists() and path.is_dir():
+###    try:
+###        path.rmdir()
+###        print("Directory removed successfully")
+###    except PermissionError:
+###        print("Permission denied: Unable to remove directory")
+###    except Exception as e:
+###       print(f"Error: {e}")
+###        else:
+###            print("Directory does not exist or is not a directory")
+##Absolute path: For absolute path we start of our hard disk
+##Relative path
+##If you wanna to reference this ecommerce directory in our project
+#can use the relative path
+
+## We can search for a files or directories that we need to pass a
+# a current path
+#print(path.glob())
+
+#* means all filles and all directories
+#print(path.glob('*'))
+#You optionally add an extension .*, the current files but not the directories
+#print(path.glob('*.*'))
+#You can also search all py files
+#print(path.glob('*.py'))
+#You can also search all xls 
+#print(path.glob('*.xls'))
+
+
+##This reads all py files
+#path = Path()
+
+#for file in path.glob('*.py'):
+#    print(file)
+
+
+##This reads all  files
+path = Path()
+
+for file in path.glob('*'):
+    print(file)
+
+    ##Pypi and pip
+#Pypi is an open source web where we found differents pacakages that we use for differents tasks
+
+'''
+Multiline comments: they are written using triple double quotes (“”” or ‘’') to open the comment and to close it. Everything between these two marks will be ignored by the Python interpreter.
+“"”
+This is a multi-line
+multi-line comment
+“"”'
+''
+'''

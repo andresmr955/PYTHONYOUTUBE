@@ -1,7 +1,3 @@
-##PACKAGES 
-## Package is a container for multiple modules, in file system terms a package is  a directory or folder.
-## We can have modiles for sales, shipping, customer service
-##__init__.py when Python interpreter sees a file with this name and name in a directory, it threats this directory as a package  
 
 
 #This is verbose
