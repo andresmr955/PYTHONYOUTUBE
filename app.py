@@ -674,3 +674,82 @@ print(person_one.__dict__)
 bob = Person("bob")
 print(bob.talk())
 print(bob.__dict__)
+##Inheritance
+##In programming we should not define something twice
+## We define a new class called Mammal and we move the methdo right there
+## The idea of taking one class and extending it to make something new
+## We can reuse an existing class and inherit all the capabilities of an existing class and then add our our own little bit to make our new class
+
+class Mammal: 
+    def walk(self):
+        print("walk mammal")
+
+class DogMa(Mammal):
+    def bark(self):
+        print("break")
+    def be_annoying(self):
+        print("annoying")        
+
+## Python does not like an empty classes, so it is better to put pass
+class CatMa(Mammal):
+    pass
+
+##This is bad, because is not DRY 
+class Dog:
+    def walk(self):
+        print("walk")
+##This is bad also, because is not DRY 
+
+class Cat:
+    def be_annoying(self):
+        print("annoying")        
+
+dog1 = Dog()
+dog1.walk()
+
+dog2m = DogMa()
+dog2m.walk()
+
+cat1 = CatMa()
+cat1.walk()
+
+cat2 = Cat()
+cat2.be_annoying()
+
+print("FREECODECAMP CLASS")
+###FREECODECAMP YOUTUBE
+
+class PartyAnimal:
+    x = 0
+    name = ""
+    def __init__(self, name):
+        self.name = name
+        print(self.name, "constructed")
+    def party(self) :
+        self.x = self.x + 1
+        print(self.name, "party count", self.x)
+
+class FootballFan(PartyAnimal):
+    points = 0
+    def touchdown(self):
+        self.points = self.points + 7 
+        self.party()
+        print(self.name, "points", self.points)
+
+### create the objects according to the class        
+
+s = PartyAnimal("Saly")
+s.party()
+print(s.__dict__)
+
+j = FootballFan("Jim")
+j.party()
+j.touchdown()
+print(j.__dict__)
+
+##Conclusions
+## Class is a template or shape
+## Attribute - a variable within a class
+## Method -  a function within a class
+## Object - A particualr instance of a class
+## Inheritance - The ability to extend a class to make a new class
