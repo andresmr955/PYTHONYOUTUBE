@@ -778,3 +778,25 @@ print("This is from lbs to kg=> ", lbs_to_kg(100))
 ## Package is a container for multiple modules, in file system terms a package is  a directory or folder.
 ## We can have modiles for sales, shipping, customer service
 ##__init__.py when Python interpreter sees a file with this name and name in a directory, it threats this directory as a package  
+##GENERATING RANDOM VALUES
+##Python comes with a standrd library that contains several modules 
+# that contains several modules for commontask such as sending email, .
+# working with date and time, generating random values and passwords and so on 
+# There are several modules already built into Python and that means there is already lots of functionality
+#  taht we can reuse
+# 
+
+##RANDOM MODULE
+import random 
+
+for i in range(3):
+    print(random.random())
+
+for i in range(3):
+    print(random.randint(10,20))
+
+
+members = ['John', 'Mary', 'bob', 'Mosh']
+leader = random.choice(members)
+
+print(leader)
